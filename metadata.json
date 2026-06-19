@@ -1,0 +1,6 @@
+{
+  "name": "Tripadvisor - Visual & Interactive Replica",
+  "description": "A high-fidelity visual and functional clone of Tripadvisor featuring an interactive travel planner, detailed listings (hotels, restaurants, attractions), customized trip builder, and a fully functional live user review engine.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

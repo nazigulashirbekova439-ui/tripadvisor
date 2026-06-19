@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Plus Jakarta Sans", "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+}
+
+@layer base {
+  body {
+    font-family: var(--font-sans);
+    background-color: #ffffff;
+    color: #0f1211;
+    -webkit-font-smoothing: antialiased;
+  }
+}
+
+/* Custom Tripadvisor elements */
+.rating-bubble {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border: 1.5px solid #00AA6C;
+  margin-right: 2px;
+}
+
+.rating-bubble.filled {
+  background-color: #00AA6C;
+}
+
+.rating-bubble-small {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  border: 1px solid #00AA6C;
+  margin-right: 1.5px;
+}
+
+.rating-bubble-small.filled {
+  background-color: #00AA6C;
+}
+
+.rating-bubble-large {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  border: 2px solid #00AA6C;
+  margin-right: 3px;
+}
+
+.rating-bubble-large.filled {
+  background-color: #00AA6C;
+}
+
+/* Hide scrollbars but keep functionality */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
